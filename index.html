@@ -66,6 +66,7 @@
         </tbody>
         </table>
 		
+		
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -122,219 +123,52 @@
             </td>
           </tr>
 		  
-          <tr onmouseout="samurai_stop()" onmouseover="samurai_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='samurai_image'>
-                  <img src='images/samurai_after.jpg' width="160"></div>
-                <img src='images/samurai_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function samurai_start() {
-                  document.getElementById('samurai_image').style.opacity = "1";
-                }
 
-                function samurai_stop() {
-                  document.getElementById('samurai_image').style.opacity = "0";
-                }
-                samurai_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://markboss.me/publication/2022-samurai/">
-                <papertitle>SAMURAI: Shape And Material from Unconstrained Real-world Arbitrary Image Collections</papertitle>
-              </a>
-              <br>
-              <a href="https://markboss.me">Mark Boss</a>, 
-              <a href="">Andreas Engelhardt</a>, 
-              <a href="https://abhishekkar.info/">Abhishek Kar</a>, 
-              <a href="http://people.csail.mit.edu/yzli/">Yuanzhen Li</a>, 
-              <a href="https://deqings.github.io/">Deqing Sun</a>, 
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/computer-science/lehrstuehle/computergrafik/computer-graphics/staff/prof-dr-ing-hendrik-lensch/">Hendrik P. A. Lensch</a>,
-              <a href="https://varunjampani.github.io">Varun Jampani</a>
-              <br>
-              <em>NeurIPS</em>, 2022
-              <br>
-              <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
-              <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
-              <a href="https://arxiv.org/abs/2205.15768">arXiv</a>
-              <p></p>
-              <p>
-				A joint optimization framework for estimating shape, BRDF, camera pose, and illumination from in-the-wild image collections.
-              </p>
-            </td>
-          </tr>		
+		<tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"  bgcolor="#ffffd0">
+		  <td style="padding:20px;width:25%;vertical-align:middle">
+			<div class="one">
+			  <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
+			  <source src="images/refnerf.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			  </video></div>
+			  <img src='images/refnerf.jpg' width="160">
+			</div>
+			<script type="text/javascript">
+			  function refnerf_start() {
+				document.getElementById('refnerf_image').style.opacity = "1";
+			  }
 
-          <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-          <div class="two" id='pnf_image'>
-            <img src='images/pnf_before.jpg' width="160"></div>
-          <img src='images/pnf_after.jpg' width="160">
-          </div>
-          <script type="text/javascript">
-          function pnf_start() {
-            document.getElementById('pnf_image').style.opacity = "1";
-          }
-
-          function pnf_stop() {
-            document.getElementById('pnf_image').style.opacity = "0";
-          }
-          pnf_stop()
-          </script>
-          </td>
-          <td style="padding:0;width:40%;max-width:40%">
-          <a href="TODO">
-          <papertitle>Polynomial Neural Fields for Subband Decomposition</papertitle>
-          </a> <br>
-          <a href="https://www.guandaoyang.com/">Guandao Yang*</a>,
-          <a href="https://sagiebenaim.github.io/">Sagie Benaim*</a>,
-          <a href="https://varunjampani.github.io/">Varun Jampani</a>,
-          <a href="https://www.kylegenova.com/">Kyle Genova</a>,
-          <strong>Jonathan T. Barron</strong>,
-          <a href="https://www.cs.princeton.edu/~funk/">Thomas Funkhouser</a>,
-          <a href="http://home.bharathh.info/">Bharath Hariharan</a>,
-          <a href="https://sergebelongie.github.io/">Serge Belongie</a>
-          <br>
-          <em>NeurIPS</em>, 2022
-          <p>
-          Representing neural fields as a composition of manipulable and interpretable components lets you do things like reason about frequencies and scale.
-          </p>
-          </td>
-          </tr> 
-
-
-          <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='malle_image'>
-                  <img src='images/MalleConv_after.jpg' width="160"></div>
-                <img src='images/MalleConv_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function malle_start() {
-                  document.getElementById('malle_image').style.opacity = "1";
-                }
-
-                function malle_stop() {
-                  document.getElementById('malle_image').style.opacity = "0";
-                }
-                malle_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://yifanjiang.net/MalleConv.html">
-                <papertitle>Fast and High-quality Image Denoising via Malleable Convolutions</papertitle>
-              </a>
-              <br>
-              <a href="https://yifanjiang.net/">Yifan Jiang</a>,
-              <a href="https://bartwronski.com/">Bartlomiej Wronski</a>, 
-							<a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://spark.adobe.com/page/CAdrFMJ9QeI2y/">Zhangyang Wang</a>,
-              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>
-              <br>
-              <em>ECCV</em>, 2022
-              <br>
-              <a href="https://yifanjiang.net/MalleConv.html">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2201.00392">arXiv</a>
-              <p></p>
-              <p>
-              We denoise images efficiently by predicting spatially-varying kernels at low resolution and using a fast fused op to jointly upsample and apply these kernels at full resolution.
-              </p>
-            </td>
-          </tr>
-					
-          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerf_supervision.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nerf_supervision.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function nerfsuper_start() {
-                  document.getElementById('nerfsuper_image').style.opacity = "1";
-                }
-
-                function nerfsuper_stop() {
-                  document.getElementById('nerfsuper_image').style.opacity = "0";
-                }
-                nerfsuper_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-							<a href="http://yenchenlin.me/nerf-supervision/">
-                <papertitle>NeRF-Supervision: Learning Dense Object Descriptors from Neural Radiance Fields</papertitle>
-              </a>
-              <br>
-              <a href="https://yenchenlin.me/">Lin Yen-Chen</a>, 
-              <a href="http://www.peteflorence.com/">Pete Florence</a>, 
-              <strong>Jonathan T. Barron</strong>,  <br>
-              <a href="https://scholar.google.com/citations?user=_BPdgV0AAAAJ&hl=en">Tsung-Yi Lin</a>, 
-              <a href="https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a>,
-              <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>
-              <br>
-              <em>ICRA</em>, 2022  
-              <br>
-							<a href="http://yenchenlin.me/nerf-supervision/">project page</a> / 
-							<a href="https://arxiv.org/abs/2203.01913">arXiv</a> / 
-							<a href="https://www.youtube.com/watch?v=_zN-wVwPH1s">video</a> /
-							<a href="https://github.com/yenchenlin/nerf-supervision-public">code</a> / 
-							<a href="https://colab.research.google.com/drive/13ISri5KD2XeEtsFs25hmZtKhxoDywB5y?usp=sharing">colab</a>				
-              <p></p>
-              <p>NeRF works better than RGB-D cameras or multi-view stereo when learning object descriptors.</p>
-            </td>
-          </tr>
-
-			    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"  bgcolor="#ffffd0">
-			      <td style="padding:20px;width:25%;vertical-align:middle">
-			        <div class="one">
-			          <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
-			          <source src="images/refnerf.mp4" type="video/mp4">
-			          Your browser does not support the video tag.
-			          </video></div>
-			          <img src='images/refnerf.jpg' width="160">
-			        </div>
-			        <script type="text/javascript">
-			          function refnerf_start() {
-			            document.getElementById('refnerf_image').style.opacity = "1";
-			          }
-
-			          function refnerf_stop() {
-			            document.getElementById('refnerf_image').style.opacity = "0";
-			          }
-			          refnerf_stop()
-			        </script>
-			      </td>
-			            <td style="padding:20px;width:75%;vertical-align:middle">
-			          <a href="https://dorverbin.github.io/refnerf/index.html">
-			            <papertitle>Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</papertitle>
-			          </a>
-			          <br>
-			          <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
-			          <a href="https://phogzone.com/">Peter Hedman</a>,
-			          <a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
-			          <a href="Todd Zickler">Todd Zickler</a>,
-			          <strong>Jonathan T. Barron</strong>,
-			          <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
-			          <br>
-			    <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation, Best Student Paper Honorable Mention)</strong></font>
-			          <br>
-			          <a href="https://dorverbin.github.io/refnerf/index.html">project page</a>
-			    /
-			          <a href="https://arxiv.org/abs/2112.03907">arXiv</a>
-			    /
-			          <a href="https://youtu.be/qrdRH9irAlk">video</a>
-			          <p></p>
-			          <p>Explicitly modeling reflections in NeRF produces realistic shiny surfaces and accurate surface normals, and lets you edit materials.</p>
-			        </td>
-			      </tr>
-						
+			  function refnerf_stop() {
+				document.getElementById('refnerf_image').style.opacity = "0";
+			  }
+			  refnerf_stop()
+			</script>
+		  </td>
+				<td style="padding:20px;width:75%;vertical-align:middle">
+			  <a href="https://dorverbin.github.io/refnerf/index.html">
+				<papertitle>Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</papertitle>
+			  </a>
+			  <br>
+			  <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
+			  <a href="https://phogzone.com/">Peter Hedman</a>,
+			  <a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
+			  <a href="Todd Zickler">Todd Zickler</a>,
+			  <strong>Jonathan T. Barron</strong>,
+			  <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
+			  <br>
+		<em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation, Best Student Paper Honorable Mention)</strong></font>
+			  <br>
+			  <a href="https://dorverbin.github.io/refnerf/index.html">project page</a>
+		/
+			  <a href="https://arxiv.org/abs/2112.03907">arXiv</a>
+		/
+			  <a href="https://youtu.be/qrdRH9irAlk">video</a>
+			  <p></p>
+			  <p>Explicitly modeling reflections in NeRF produces realistic shiny surfaces and accurate surface normals, and lets you edit materials.</p>
+			</td>
+		  </tr>
+				
+				
           <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -441,8 +275,12 @@
               <p style="text-align:right;font-size:small;">
                 <br>
                 Special thanks to <a href="https://jonbarron.info/">Jon Barron for the website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>.
-				Last updated on Nov. 2022.
               </p>
+			  <p style="text-align:right;font-size:small;">
+                <br>
+                Last updated: Nov. 2022.
+              </p>
+			  
             </td>
           </tr>
         </tbody></table>
@@ -451,9 +289,8 @@
         <tr>
           <td style="padding:25px;width:25%;vertical-align:middle">
             <p style="text-align:center;font-size:small;">
-<!--              <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=400&t=tt&d=SmVNKAru4SRtedjTqTTFYIJmNGoHTrBK5VOIsscudyM'></script>-->
-              <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=SmVNKAru4SRtedjTqTTFYIJmNGoHTrBK5VOIsscudyM'></script>
-              <!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=GBSsEzAYyt4c8PKMCuVFdjM_Lwlz1U7drURBMMaLC60"></script>  -->
+              <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Nf9JLSPnh5kV19cJJX3LJrqsxQ0KiJ7YmpagTwstFxE&cl=ffffff&w=a"></script>
+              <!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=Nf9JLSPnh5kV19cJJX3LJrqsxQ0KiJ7YmpagTwstFxE"></script>  -->
             </p>
           </td>
         </tr>
